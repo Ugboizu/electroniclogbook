@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+
+
+.wrap{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../public/images/abstractluxury.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-right: 5%;
+    padding-left: 6%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.nav{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav img{
+    width: 60px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+nav p{
+    margin-left: 38px;
+    margin-top: -6px;
+}
+
+.btn1{
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #2e2297 3%, #32336e 100%);
+    border-radius: 30px;
+    border: 1px solid #020167;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+    text-shadow: 0px 1px 0px #020167;
+}
+
+.btn1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn2 {
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
+    border-radius: 30px;
+    border: 1px solid #cbcbcb;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+    text-shadow: 0px 1px 0px #cbcbcb;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: #020167;
+}
+
+button:hover {
+    box-shadow: 3px 8px 22px rgba(94,28,68,.15);
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .head {
+    position: relative;
+    max-width: 600px;
+}
+.container .head h1 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 80px;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    font-size: 40px;
+    color: rgb(1, 10, 51);
+    /* text-align: center; */
+}
+.container .head p {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    margin-top: 10px;
+    color: #0d0242;
+}
+.btn3 {
+    background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
+    margin-top: 40px;
+    margin-left: 140px;
+    padding: 15px 30px;
+    text-align: center;
+    transition: .5s;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #02013b;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+}
+
+.landingpage {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    /* width: 600px; */
+    margin-top: 50px;
+    padding-left: 720px;
+    justify-content: flex-end;
+}
+/* 
+ul {
+    list-style-type: none;
+}
+  
+ul li {
+    float: right;
+}
+  
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+
+.carousel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+
+.image{
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+span{
+    margin: auto;
+    font-size: 2rem;
+}
+
+@keyframes rotate360{
+    from {
+        transform: rotateY(0deg)
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.image:nth-child(1) {
+    background-image: url("../../public/images/groupfive.jpg");
+    transform: rotateY(0deg) translateZ(210px);
+}
+
+.image:nth-child(2) {
+    background-image: url("../../public/images/laptopcomputer.jpg");
+    transform: rotateY(72deg) translateZ(210px);
+}
+
+.image:nth-child(3) {
+    background-image: url("../../public/images/bluepink.jpg");
+    transform: rotateY(144deg) translateZ(210px);
+}
+
+.image:nth-child(4) {
+    background-image: url("../../public/images/toplaptop.jpg");
+    transform: rotateY(216deg) translateZ(210px);
+}
+
+.image:nth-child(5) {
+    background-image: url("../../public/images/learninglibrary.jpg");
+    transform: rotateY(288deg) translateZ(210px);
+} */

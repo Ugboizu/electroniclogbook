@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: none;
+    background: url("../../public/images/whitecrumpled.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.innerWrapper {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 55% 45%;
+    width: 60vw;
+    height: 70vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sec1 {
+    padding: 10%;
+}
+.title {
+    color: #020167;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+.titletxt {
+    color: #768192;
+    font-family: 'Poppins';
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.titletxt a {
+    color: #020167;
+    font-family: 'Poppins';
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.sec1 .txtbox{
+    display: block;
+    border: 2px solid #768192;
+    border-radius: 6px;
+    width: 60%;
+    padding: 6px;
+}
+.sec1 .txtbox::placeholder{
+    font-family: 'Poppins';
+    color: #768192;
+}
+label{
+    color: #768192;
+    font-family: 'Poppins';
+    margin-left: 5px;
+}
+.loginbtn {
+    width: 62%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    border-radius: 10px;
+    border: 2px solid #020167;
+    background-color: #020167;
+    color: #C4C4C4;
+    margin-top: 10px;
+}
+.loginbtn:hover{
+    color: #020167;
+    background-color: #768192;
+    border: 2px solid #768192;
+}
+.sec2 {
+    background: url("../../public/images/Overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+.babcock {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.babcock img {
+    margin-right: 25px;
+}
+.babcock p {
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto'; 
+    text-align: center;   
+    letter-spacing: 0.12em;
+}
+.babcock p .bu {
+    border-bottom: 2px solid white;
+}
+.logintext {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.btnWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.btnWrapper button:hover{
+    background-color: #020167;
+    color:white;
+
+}
+.btnWrapper button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    border-radius: 10px;
+    border: 0;
+    padding: 2px 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #020167;
+}
+.btnWrapper img {
+    margin-right: 5px;
+}

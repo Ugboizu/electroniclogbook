@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+
+.wrapper{
+   background: url("../../public/images/whitecrumpled.jpg ");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   height: 100vh;
+   padding: 100px;
+   margin-left: 250px;
+}
+
+.title{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #020167;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.workdetails{
+    text-align: center;
+    /* align-items: center; */
+}
+
+.wrapper input{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #C4C4C4;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.wrapper input::placeholder{
+    font-family: 'Poppins';
+    color: #768192;
+}
+
+.workbtn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 0;
+    padding: 2px 16px;
+    color: white;
+    background-color: #020167;
+    margin-top: 20px;
+}
+
+.workbtn:hover{
+    background-color: #768192;
+    color:#020167;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+
+
+.wrapper{
+    background: url("../../public/images/whitecrumpled.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-left: 250px;
+    text-align: center;
+    align-items: center; 
+}
+.innerwrapper{
+    padding: 30px;
+    align-items: center;
+}
+.title{
+    color: #020167;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.report{
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.report select{
+    border: 2px solid #C4C4C4;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    color: #020167;
+    margin-bottom: 20px;
+}
+.reportt{
+    display: grid;
+    grid-template-columns: 20% 79%;
+    width: 100%;
+    column-gap: 1%;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.date input{
+    padding: 6px;
+    border: 2px solid #C4C4C4;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    width: 80%;
+    /* margin-top: 81px; */
+}
+textarea{
+    border: 2px solid #D8DBE0;
+    border-radius: 6px;
+    height: 120px;
+}
+.reportt textarea::placeholder{
+    font-family: 'Poppins';
+    padding: 3px;
+}
+
+.submitbtn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 0;
+    padding: 2px 16px;
+    color: white;
+    background-color: #020167;
+    margin-top: 10px;
+}
+
+.submitbtn:hover{
+    background-color: #768192;
+    color:#020167;
+}

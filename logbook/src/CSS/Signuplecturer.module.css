@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+ 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../../public/images/whitecrumpled.jpg ");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: 0;
+}
+.innerWrapper {
+    padding: 20px;
+    width: 60vw;
+    background: url("../../public/images/Overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.babcock {
+    display: flex;
+}
+.babcock img{
+    margin-right: 40px;
+}
+.babcock p {
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto'; 
+    text-align: center;   
+    letter-spacing: 0.12em;
+}
+.babcock p .bu {
+    border-bottom: 2px solid white;
+}
+.homebtn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 6px;
+    border: 0;
+    background-color: #020167;
+    padding: 4px 10px;
+}
+.homebtn a{
+    text-decoration: none;
+    color:white;
+    
+}
+.homebtn a:hover{
+    color:#020167;
+} 
+.homebtn:hover{
+    background-color:white;
+    color:#020167;
+} 
+.sec2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #020167;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.reg{
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    width: 100%;
+    column-gap: 5%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.input{
+    background: #FFFFFF;
+    border: 2px solid #D8DBE0;  
+    border-radius: 6px;
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 6px;
+}
+.input::placeholder{
+    font-family: 'Poppins';
+    color: #768192;
+    text-transform: uppercase;
+}
+.regsec1 label{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+} 
+.regsec1 input{
+    margin: 4px;
+}
+.reg select{ 
+    background: #FFFFFF;
+    border: 2px solid #D8DBE0;
+    border-radius: 6px;
+    width: 100%;
+    font-family: 'Poppins';
+    color: #768192;
+    margin-bottom: 6px;
+}
+
+.note{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.note a{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+}
+
+.regbtn{
+    display: flex;
+    justify-content: center;
+    
+}
+.regbtn button{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    background-color: #020167;
+    padding: 6px 10px;
+}
+.regbtn button:hover{
+    color: #020167;
+    background-color: white;
+}
