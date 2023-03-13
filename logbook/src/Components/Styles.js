@@ -2,12 +2,9 @@ import styled from "styled-components/macro";
 
 export const Body = styled.div`
     background-color: #E5E5E5 !important;
-    /* background-repeat: no-repeat; */
-    background-size: 100%;
-    height: 100vh;
+    background-size: cover;
+    /* height: 100vh; */
     margin-left: 250px;
-    /* text-align: center; */
-    /* align-items: center; ; */
 `;
 export const Entity = styled.div`
   color: #020167 ;

@@ -10,7 +10,7 @@ function Signuplecturer() {
     const [surname, setSurname ] = useState();
     const [email, setEmail ] = useState();
     const [phonenumber, setPhonenumber ] = useState();
-    const [sex, setSex ] = useState();
+    const [selectedOption, setSelectedOption ] = useState();
     const [school, setSchool ] = useState();
 
   return (

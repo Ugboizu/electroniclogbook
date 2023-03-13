@@ -1,8 +1,12 @@
 import classes from "../CSS/Profile.module.css";
-import React from 'react'
+import React from 'react';
+import Sidebar from './Sidebar';
 
 function Profile() {
   return (
+      <div>
+          <Sidebar />
+      
     <div className={classes.wrapper}>
         <div className={classes.innerwrapper}>
             <div className={classes.head}>
@@ -79,6 +83,7 @@ function Profile() {
                 </div>
             </div>
         </div>
+    </div>
     </div>
   )
 }

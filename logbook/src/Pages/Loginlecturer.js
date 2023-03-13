@@ -12,11 +12,11 @@ function Loginlecturer() {
                 <h3 className={classes.title}>LOGIN</h3>
                 <p className={classes.titletxt}>Sign into your account </p>
                     
-                <input className={classes.txtbox} onChange={(e) => {setLecturerid(e.target.value)}} type="text" name="" id="lecturerid" placeholder="Lecturer ID"></input>
+                <input className={classes.txtbox} value={lecturerid} onChange={(e) => {setLecturerid(e.target.value)}} type="text" name="" id="lecturerid" placeholder="Lecturer ID"></input>
                 <br></br>
-                <input className={classes.txtbox} onChange={(e) => {setPassword(e.target.value)}} type="password" name="" id="password" placeholder="Password"></input>
+                <input className={classes.txtbox} value={password} onChange={(e) => {setPassword(e.target.value)}} type="password" name="" id="password" placeholder="Password"></input>
                 <br></br>
-                <input className={classes.ckbox} onChange={(e) => {setShowpassword(e.target.value)}} type="checkbox" name="" id="password" ></input>
+                <input className={classes.ckbox} value={showpassword} onChange={(e) => {setShowpassword(e.target.value)}} type="checkbox" name="" id="password" ></input>
                 <label>Show Password</label> <br />
 
                 <button className={classes.loginbtn}>Login</button>

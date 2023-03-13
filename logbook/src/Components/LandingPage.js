@@ -9,8 +9,22 @@ function LandingPage() {
         <nav>
             <h3>BABCOCK UNIVERSITY <p>SIWES PORTAL</p></h3>
         </nav>
-        <button className={classes.btn1}> <a href="/student/login"  id="btn1">Login</a></button>
-        <button className={classes.btn2}> <a href="/student/signup"  id="btn2">Signup</a></button>
+        <div className={classes.dropdown}>
+          <button className={classes.btn1}> Login </button>
+            <div className={classes.dropdowncontent}>
+              <a href="/student/login">Student</a>
+              <a href="/lecturer/login">Lecturer</a>
+            </div>
+        </div>
+        <div className={classes.dropdown}>
+          <button className={classes.btn2}> Signup </button>
+             <div className={classes.dropdowncontent}>
+                <a href="/student/signup">Student</a>
+                <a href="/lecturer/signup">Lecturer</a>
+            </div>
+        </div>
+  
+
       </div>
         <div className={classes.container}>
             <div className={classes.head}>

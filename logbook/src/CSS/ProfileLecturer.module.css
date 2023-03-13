@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+
+.wrapper {
+    background: url("../../public/images/whitecrumpled.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+.innerwrapper{
+    display: grid; 
+    grid-template-columns: 30% 67%;
+    column-gap: 3%;
+
+}
+
+.head {
+    margin-top: 100px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgb(197, 197, 228);
+    height: 288px;
+    padding: 35px 5px 5px 5px;
+}
+
+.head img{
+    height: 30%;
+    width: 40%;
+}
+
+.pdetails {
+    display: flex;
+}
+
+.profile h3 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #020167;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    font-size: 24px;
+    margin: 50px;
+}
+
+.detail h4{
+    border: 2px solid #020167;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    width: 300px;
+    background-color: whitesmoke;
+    color: rgb(77, 88, 136);
+    text-transform: uppercase;
+}
+
+.answer h4{
+    border: 2px solid #020167;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    width: 400px;
+    background-color: rgb(77, 88, 136);
+    color: whitesmoke;
+}
+
+.answer{
+    margin-bottom: 35%;
+}

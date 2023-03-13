@@ -37,6 +37,26 @@ nav p{
     margin-top: -6px;
 }
 
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdowncontent a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdowncontent a:hover {background-color: rgb(221, 221, 221)}
+
+.dropdown:hover .dropdowncontent {display: block;}
+
 .btn1{
     text-transform: uppercase;
     background: linear-gradient(to bottom, #2e2297 3%, #32336e 100%);
@@ -50,9 +70,6 @@ nav p{
     margin: 10px;
     box-shadow: 1px 4px 12px rgba(94,28,68,.15);
     text-shadow: 0px 1px 0px #020167;
-}
-
-.btn1 a{
     text-decoration: none;
     color: #fff;
 }
@@ -70,9 +87,6 @@ nav p{
     margin: 10px;
     box-shadow: 1px 4px 12px rgba(94,28,68,.15);
     text-shadow: 0px 1px 0px #cbcbcb;
-}
-
-.btn2 a{
     text-decoration: none;
     color: #020167;
 }

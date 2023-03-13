@@ -10,7 +10,7 @@ const Signup = () => {
     const [surname, setSurname ] = useState();
     const [email, setEmail ] = useState();
     const [phonenumber, setPhonenumber ] = useState();
-    const [sex, setSex ] = useState();
+    const [selectedOption, setSelectedOption ] = useState();
     const [school, setSchool ] = useState();
     const [level, setLevel ] = useState();
     const [courseofstudy, setCourseofstudy ] = useState();

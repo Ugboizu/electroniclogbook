@@ -23,9 +23,11 @@ function Sidebar() {
                 <li className="navbar-toggle">
                     <Link to="#" className="title" /* className="menubars" */>
                         {/* <AiIcons.AiOutlineClose /> */}
+                        <img src="../images/bablogo.png" alt="logo" />
                         <h2>BABCOCK UNIVERSITY <p>SIWES PORTAL</p></h2>
                     </Link>
                 </li>
+                <div className="data">
                 { Sidebardata.map((item, index) => {
                     return (
                         <li key={index} className={item.cName}>
@@ -37,6 +39,7 @@ function Sidebar() {
                     )
 
                 })}
+                </div>
             </ul>
         </nav>
     </>

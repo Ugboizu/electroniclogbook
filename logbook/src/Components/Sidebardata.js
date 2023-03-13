@@ -4,12 +4,7 @@ import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 
 export const Sidebardata = [
-    {
-        title: 'Home',
-        path: '/',
-        icon: <AiIcons.AiFillHome />,
-        cName: 'nav-text'
-    },
+    
     {
         title: 'Profile',
         path: '/profile',
@@ -32,6 +27,12 @@ export const Sidebardata = [
         title: 'Work Details',
         path: '/workdetails',
         icon: <FaIcons.FaBuilding />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Logout',
+        path: '',
+        icon: <AiIcons.AiOutlineLogout />,
         cName: 'nav-text'
     },
 ]
