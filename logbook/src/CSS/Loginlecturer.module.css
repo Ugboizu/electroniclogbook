@@ -59,7 +59,7 @@ label{
     margin-left: 5px;
 }
 .loginbtn {
-    width: 62%;
+    width: 60%;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -68,13 +68,13 @@ label{
     border-radius: 10px;
     border: 2px solid #020167;
     background-color: #020167;
-    color: #C4C4C4;
+    color: white;
     margin-top: 10px;
 }
 .loginbtn:hover{
-    color: #020167;
-    background-color: #768192;
-    border: 2px solid #768192;
+    /* box-shadow: 3px 8px 22px rgba(94,28,68,.15);
+    transform: scale(1.1);
+    transition: .2s ease-in-out; */
 }
 .sec2 {
     background: url("../../public/images/Overlay.png");
@@ -111,32 +111,31 @@ label{
     font-size: 20px;
 }
 .btnWrapper {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
 }
-.btnWrapper button:hover{
-    background-color: #020167;
-    color:white;
-
+.btnWrapper a:hover {
+    box-shadow: 3px 8px 22px rgba(94,28,68,.15);
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
 }
-.btnWrapper button {
+.btnWrapper a {
+    text-decoration: none;
+    width: 50%;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
-    line-height: 33px;
+    font-size: 20px;
+    line-height: 30px;
     border-radius: 10px;
     border: 0;
-    padding: 2px 16px;
+    padding: 4px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    background-color: white;
     color: #020167;
-}
-.btnWrapper img {
-    margin-right: 5px;
 }

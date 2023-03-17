@@ -1,5 +1,6 @@
 import classes from "../CSS/LandingPage.module.css";
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 
 function LandingPage() {
   return (
@@ -32,7 +33,10 @@ function LandingPage() {
               <p>The Student Industrial Work Experience Scheme (SIWES) program was established by the Industrial Trust Fund (ITF)
                 The SIWES program is an effort to bridge the gap that exists between theory and practice.
                 A Contact Details is provided to the various ITF Office in Nigeria, to view this;</p> 
-                <button className={classes.btn3}>Click Here</button>
+                <div className={classes.btn3}>
+                  <a>Click Here</a>
+                </div>
+                
             </div>
             <div className={classes.landingpage}>
               <img src="../images/Exams-bro.png" alt="landingpage" />

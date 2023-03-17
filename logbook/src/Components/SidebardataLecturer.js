@@ -13,7 +13,7 @@ export const SidebardataLecturer = [
     },
     {
         title: 'Students Supervised',
-        path: '/student',
+        path: '/studentsupervising',
         icon: <FaIcons.FaChalkboardTeacher />,
         cName: 'nav-textt'
     },

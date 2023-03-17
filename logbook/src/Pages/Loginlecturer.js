@@ -1,5 +1,6 @@
 import classes from "../CSS/Loginlecturer.module.css";
 import React, { useState } from 'react';
+import * as FaIcons from "react-icons/fa";
 
 function Loginlecturer() {
     const [lecturerid, setLecturerid ] = useState();
@@ -34,7 +35,7 @@ function Loginlecturer() {
                 <p className={classes.logintext}>We want to make easy for our lecturers and students to easily access portal, fill in records, view past records securely and effectively.</p>
 
                 <div className={classes.btnWrapper}>
-                    <button><img src="../images/home.png" /> Home</button>
+                        <a href="/"><FaIcons.FaHome /> Home</a>
                 </div>
             </div>
         </div>

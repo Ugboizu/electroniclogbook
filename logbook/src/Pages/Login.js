@@ -1,5 +1,6 @@
 import classes from "../CSS/Login.module.css"
 import React, { useState } from 'react';
+import * as FaIcons from "react-icons/fa";
 
 const Login = () => {
     const [matricno, setMatricno ] = useState();
@@ -36,7 +37,7 @@ const Login = () => {
                     <p className={classes.logintext}>We want to make easy for our lecturers and students to easily access portal, fill in records, view past records securely and effectively.</p>
 
                     <div className={classes.btnWrapper}>
-                        <button><img src="../images/home.png" /> Home</button>
+                        <a href="/"><FaIcons.FaHome /> Home</a>
                     </div>
                 </div>
             </div>

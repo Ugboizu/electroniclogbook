@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+
+.wrapper {
+    background: url("../../public/images/whitecrumpled.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+    margin-left: 250px;
+}
+
+.innerwrapper{
+    display: grid; 
+    grid-template-columns: 30% 67%;
+    column-gap: 3%;
+
+}
+
+.pdetailss {
+    display: flex;
+}
+
+.profilee h3 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #020167;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.detaill h4{
+    border: 2px solid #020167;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    width: 300px;
+    background-color: whitesmoke;
+    color: rgb(77, 88, 136);
+    text-transform: uppercase;
+}
+
+.answerr h4{
+    border: 2px solid #020167;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    width: 400px;
+    background-color: rgb(77, 88, 136);
+    color: whitesmoke;
+}
+/* 
+button{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 0;
+    padding: 2px 16px;
+    background-color: #020167;
+    margin-top: 20px;
+    width: 50%;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+} */

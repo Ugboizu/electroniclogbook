@@ -10,6 +10,9 @@ import Signuplecturer from './Pages/Signuplecturer';
 import PR from "./PR";
 import Profile from './Components/Profile';
 import ProfileLecturer from './Components/ProfileLecturer';
+import StudentSupervising from './Components/StudentSupervising';
+import Workdetailpart from './Components/Workdetailpart';
+import RP from "./RP";
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
             <Route path="/lecturer/login" element={<Loginlecturer />} />
             <Route path="/student/signup" element={<Signup />} />
             <Route path="/lecturer/signup" element={<Signuplecturer />} />
+            <Route path="/studentsupervising" element={<StudentSupervising />} />
+            <Route path="/studentsupervising/workdetails" element={<Workdetailpart />} />
+            <Route path="/studentsupervising/pastrecords" element={<RP />} />
             </Routes>
       </Router>
       

@@ -56,9 +56,35 @@
     color: white;
     background-color: #020167;
     margin-top: 20px;
+    width: 30%;
 }
 
 .workbtn:hover{
     background-color: #768192;
     color:#020167;
 }
+
+@media only screen and (max-width: 700px) {
+    .wrapper {
+      margin-left: 0;
+      padding: 10vw;
+    }
+  
+    .title {
+      font-size: 4vw;
+      margin-bottom: 4vw;
+    }
+  
+    .wrapper input {
+      width: 90%;
+    }
+  
+    .workbtn {
+      font-size: 4vw;
+      line-height: 8vw;
+      padding: 2vw 8vw;
+    }
+  }
+  
+  
+  
