@@ -4,3 +4,6 @@ body{
   /* background: url("../public/images/whitecrumpled.jpg"); */
 }
 
+.prWrapper {
+  padding-bottom: 80vh;
+}

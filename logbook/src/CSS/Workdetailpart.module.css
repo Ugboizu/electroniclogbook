@@ -50,7 +50,7 @@
     background-color: rgb(77, 88, 136);
     color: whitesmoke;
 }
-/* 
+
 button{
     font-family: 'Poppins';
     font-style: normal;
@@ -62,10 +62,10 @@ button{
     padding: 2px 16px;
     background-color: #020167;
     margin-top: 20px;
-    width: 50%;
+    width: fit-content;
 }
 
 button a{
     text-decoration: none;
     color: white;
-} */
+}

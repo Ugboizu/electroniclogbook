@@ -1,15 +1,24 @@
 import "../CSS/Sidebar.css";
 import React, {useState} from 'react'
-import * as FaIcons from "react-icons/fa";
+// import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Sidebardata } from './Sidebardata'
     
 
 function Sidebar() {
     const [sidebar, setSidebar, menu, items, toggle] = useState(false);
 
-    const showSidebar = () => setSidebar(!sidebar);
+    // const showSidebar = () => setSidebar(!sidebar);
+
+    const navigate = useNavigate();
+
+    function handleLogoutClick(opt) {
+        console.log("Logged out");
+        localStorage.setItem('loggedIn', JSON.stringify(false)); 
+        localStorage.setItem('user', JSON.stringify({})); 
+        navigate("/")
+    }
 
   return (
     <>
@@ -28,17 +37,25 @@ function Sidebar() {
                     </Link>
                 </li>
                 <div className="data">
-                { Sidebardata.map((item, index) => {
-                    return (
-                        <li key={index} className={item.cName}>
-                            <Link to={item.path}>
-                                {item.icon}
-                                <span>{item.title}</span>
-                            </Link>
-                        </li>
-                    )
+                    { Sidebardata.map((item, index) => {
+                        return (
+                            <li key={index} className={item.cName} >
+                                <Link to={item.path}>
+                                    {item.icon}
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                        )
 
-                })}
+                    })}
+                    <li className="nav-text" onClick={handleLogoutClick}>
+                            
+                        <span style={{marginLeft: "0"}}>
+                            <AiIcons.AiOutlineLogout />
+                            <span>Logout</span>
+                        </span>
+                        
+                    </li>
                 </div>
             </ul>
         </nav>

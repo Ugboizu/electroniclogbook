@@ -1,22 +1,106 @@
 import classes from "../CSS/Signup.module.css";
 import React, { useState } from 'react';
+import api from "../api/api";
+import { useNavigate } from "react-router-dom";
+import { Alert, CircularProgress, Snackbar } from "@mui/material";
 
 const Signup = () => {
-    const [matricno, setMatricno ] = useState();
-    const [password, setPassword ] = useState();
-    const [confirmpassword, setConfirmpassword ] = useState(false);
-    const [firstname, setFirstname ] = useState();
-    const [middlename, setMiddlename ] = useState();
-    const [surname, setSurname ] = useState();
-    const [email, setEmail ] = useState();
-    const [phonenumber, setPhonenumber ] = useState();
-    const [selectedOption, setSelectedOption ] = useState();
-    const [school, setSchool ] = useState();
-    const [level, setLevel ] = useState();
-    const [courseofstudy, setCourseofstudy ] = useState();
+    const [matricno, setMatricno ] = useState("");
+    const [password, setPassword ] = useState("");
+    const [confirmpassword, setConfirmpassword ] = useState("");
+    const [firstname, setFirstname ] = useState("");
+    const [middlename, setMiddlename ] = useState("");
+    const [surname, setSurname ] = useState("");
+    const [email, setEmail ] = useState("");
+    const [phonenumber, setPhonenumber ] = useState("");
+    const [selectedOption, setSelectedOption ] = useState("");
+    const [school, setSchool ] = useState("");
+    const [level, setLevel ] = useState("");
+    const [courseofstudy, setCourseofstudy ] = useState("");
+    const [loading, setLoading ] = useState(false);
+
+    const navigate = useNavigate();
+    const [openSnackBar, setOpenSnackBar] = useState(false);
+    const [messageSnackBar, setMessageSnackBar] = useState("");
+
+    const handleSnackBar = () => {
+        setOpenSnackBar(true);
+    };
+
+    const handleSubmit = async () => {
+        
+        if(email !== "" && password !== "" && matricno !== "" && confirmpassword !== "" && firstname !== "" && middlename !== "" && surname !== "" && phonenumber !== "" && selectedOption !== "" && school !== "" && level !== "" && courseofstudy !== "") {
+
+            if(confirmpassword === password) {
+
+                const data = { 
+                    username: email, 
+                    firstName: firstname, 
+                    lastName: surname, 
+                    middleName: middlename, 
+                    school: school, 
+                    level: level,
+                    course: courseofstudy,
+                    matricNumber: matricno,
+                    gender: selectedOption,
+                    phoneNumber: phonenumber, 
+                    dateCreated: String,
+                    password: password,
+                    // acceptanceLetterID: String,
+                    // reportID: String,
+                }
+                console.log(data);
+                setLoading(true);
+                try {
+                    const response = await api.post("/student/register", data)
+                    console.log(response.data);
+                    if (response.data?.success === false) {
+                        setMessageSnackBar("Error occured. Check internet and try again.")
+                        handleSnackBar()
+                        setLoading(false)
+                    } else {
+                        navigate("/student/login")
+                    }
+                } catch(err) {
+                    if(err.response) {
+                        setLoading(false)
+                        if(err.response.status === 401) {
+                            setMessageSnackBar("Username or password incorrect!")
+                            handleSnackBar()
+                            setLoading(false)
+                        } else {
+                            setMessageSnackBar("Error occured. Check internet and try again.")
+                            handleSnackBar()
+                            setLoading(false)
+                        }
+                        // console.log("Error: " + err.response);
+                    }
+                }
+            } else {
+                // Passwords don't match
+                setMessageSnackBar("Passwords don't match")
+                handleSnackBar()
+                setLoading(false)
+            }
+
+        } else { 
+            // There is a missing field
+            setMessageSnackBar("All Fields Required")
+            handleSnackBar()
+            setLoading(false)
+        }
+        
+    }
+
 
     return (
         <div className={classes.wrapper}>
+            <Snackbar open={openSnackBar} autoHideDuration={6000} onClose={() => setOpenSnackBar(false)}>
+                <Alert onClose={() => setOpenSnackBar(false)} severity="warning"sx={{ width: '100%', background: "#020167", color: "white" }}>
+                    {messageSnackBar}
+                </Alert>
+            </Snackbar>
+
              
             <div className={classes.innerWrapper}>
                 <div className={classes.sec2}>
@@ -45,9 +129,9 @@ const Signup = () => {
                       <input type="text" name="" id="phonenumber" className={classes.input} onChange={(e) => {setPhonenumber(e.target.value)}} placeholder='Phonenumber'></input> 
 
                       <label for="sex">Sex:
-                        <input type="radio" name="sex" id="sex" className={classes.r} checked={selectedOption === 'male'} onChange={(e) => setSelectedOption(e.target.value)} value="Male" ></input>
+                        <input type="radio" name="sex" id="sex" className={classes.r} checked={selectedOption === 'male'} onChange={(e) => setSelectedOption(e.target.value)} value="male" ></input>
                         <label>Male</label>
-                        <input type="radio" name="sex" id="sex" className={classes.r} checked={selectedOption === 'female'} onChange={(e) => setSelectedOption(e.target.value)} value="Female" ></input>
+                        <input type="radio" name="sex" id="sex" className={classes.r} checked={selectedOption === 'female'} onChange={(e) => setSelectedOption(e.target.value)} value="female" ></input>
                         <label>Female</label> 
                       </label> 
 
@@ -100,7 +184,7 @@ const Signup = () => {
                 </div>
                 
                 <div className={classes.regbtn}>
-                    <button>Register</button>
+                    <button onClick={handleSubmit}>Register{loading ? <CircularProgress  size={17} color="inherit" /> : ""}</button>
                 </div>
 
                 
