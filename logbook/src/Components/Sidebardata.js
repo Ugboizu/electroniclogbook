@@ -29,10 +29,4 @@ export const Sidebardata = [
         icon: <FaIcons.FaBuilding />,
         cName: 'nav-text'
     },
-    {
-        title: 'Logout',
-        path: '',
-        icon: <AiIcons.AiOutlineLogout />,
-        cName: 'nav-text'
-    },
 ]

@@ -17,22 +17,4 @@ export const SidebardataLecturer = [
         icon: <FaIcons.FaChalkboardTeacher />,
         cName: 'nav-textt'
     },
-    // {
-    //     title: 'Past Records',
-    //     path: '/pastrecords',
-    //     icon: <AiIcons.AiFillFolder />,
-    //     cName: 'nav-text'
-    // },
-    // {
-    //     title: 'Work Details',
-    //     path: '/workdetails',
-    //     icon: <FaIcons.FaBuilding />,
-    //     cName: 'nav-text'
-    // },
-    {
-        title: 'Logout',
-        path: '',
-        icon: <AiIcons.AiOutlineLogout />,
-        cName: 'nav-textt'
-    },
 ]

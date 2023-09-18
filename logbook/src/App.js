@@ -13,12 +13,38 @@ import ProfileLecturer from './Components/ProfileLecturer';
 import StudentSupervising from './Components/StudentSupervising';
 import Workdetailpart from './Components/Workdetailpart';
 import RP from "./RP";
+import ProtectedRoutes from './Pages/ProtectedRoutes';
 
 function App() {
   return (
     <div className="App">
       
       <Router>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/student/login" element={<Login />} /> 
+            <Route path="/lecturer/login" element={<Loginlecturer />} />
+            <Route path="/student/signup" element={<Signup />} />
+            <Route path="/lecturer/signup" element={<Signuplecturer />} />
+
+            <Route element={<ProtectedRoutes />}>
+
+              <Route path="/workdetails" element={<WorkDetails />} />
+              <Route path="/newreport" element={<NewReport />} />
+              <Route path="/pastrecords" element={<PR />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/profileLecturer" element={<ProfileLecturer />} />
+              <Route path="/studentsupervising" element={<StudentSupervising />} />
+              <Route path="/studentsupervising/workdetails/:id" element={<Workdetailpart />} />
+              <Route path="/studentsupervising/pastrecords/:id" element={<RP />} />
+                
+            </Route>
+          
+          </Routes>
+      </Router>
+
+
+      {/* <Router>
           <Routes> 
             <Route path="/workdetails" element={<WorkDetails />} />
             <Route path="/newreport" element={<NewReport />} />
@@ -29,12 +55,12 @@ function App() {
             <Route path="/student/login" element={<Login />} /> 
             <Route path="/lecturer/login" element={<Loginlecturer />} />
             <Route path="/student/signup" element={<Signup />} />
-            <Route path="/lecturer/signup" element={<Signuplecturer />} />
+            <Route path="/lecturer/signup" element={<Signuplecturer />} /> 
             <Route path="/studentsupervising" element={<StudentSupervising />} />
             <Route path="/studentsupervising/workdetails" element={<Workdetailpart />} />
             <Route path="/studentsupervising/pastrecords" element={<RP />} />
             </Routes>
-      </Router>
+      </Router> */}
       
     </div>
     

@@ -32,10 +32,10 @@ function LandingPage() {
               <h1 className={classes.image}>SIWES ACTIVITY LOG</h1>
               <p>The Student Industrial Work Experience Scheme (SIWES) program was established by the Industrial Trust Fund (ITF)
                 The SIWES program is an effort to bridge the gap that exists between theory and practice.
-                A Contact Details is provided to the various ITF Office in Nigeria, to view this;</p> 
-                <div className={classes.btn3}>
+                Contact Details of the various ITF Office in Nigeria can be found on their official webpage.</p> 
+                {/* <div className={classes.btn3}>
                   <a>Click Here</a>
-                </div>
+                </div> */}
                 
             </div>
             <div className={classes.landingpage}>

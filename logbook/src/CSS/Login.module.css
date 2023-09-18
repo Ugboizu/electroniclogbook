@@ -64,7 +64,7 @@ label{
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 33px;
+    /* line-height: 33px; */
     border-radius: 10px;
     border: 2px solid #020167;
     background-color: #020167;
